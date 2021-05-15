@@ -1,13 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
-import {NavbarBlack} from './component/nav';
+import {Navbar, Iconcard} from './component';
+import Message from './message';
 
 function App() {
   return (
     <div style={{flex: 1}}>
-      {NavbarBlack()}
-      <div>
-        <p>hii let tset this now ?</p>
+      <Navbar />
+      <div
+        className="d-flex flex-row h-50 justify-content-around"
+        style={{marginTop: 10}}>
+        <Iconcard info={Message.icon} />
+        <Iconcard info={Message.splash} />
       </div>
     </div>
   );
