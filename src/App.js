@@ -1,6 +1,7 @@
 import './App.css';
 import {Navbar, Iconcard} from './component';
 import Message from './message';
+import styles from './style';
 
 function App() {
   return (
@@ -9,8 +10,18 @@ function App() {
       <div
         className="d-flex flex-row h-50 justify-content-around"
         style={{marginTop: 10}}>
-        <Iconcard info={Message.icon} />
-        <Iconcard info={Message.splash} />
+        <Iconcard
+          style={styles.imageCard}
+          info={Message.icon}
+          uploadButtonStyle={styles.uploadButton}
+          uploadConatiner={styles.uploadConatiner}
+        />
+        <Iconcard
+          style={styles.imageCard}
+          info={Message.splash}
+          uploadButtonStyle={styles.uploadButton}
+          uploadConatiner={styles.uploadConatiner}
+        />
       </div>
     </div>
   );
