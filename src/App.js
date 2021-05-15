@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import {NavbarBlack} from './component/nav';
 
